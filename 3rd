@@ -1,0 +1,15 @@
+    #Medical questionnaire
+
+name = str(input ('Write your name: '))
+surname = str(input ('Write your surname: '))
+age = int(input ('How old are you? '))
+weight = int(input ('What is your weight? '))
+
+if age < 30 and (weight > 50 or weight < 120):
+    print ('Dear ', surname, name, age, 'years old which weight is', weight, 'kg.', '\n Your form is okay!')
+elif age > 30 and age <40 and (weight < 50 or weight > 120):
+    print ('Dear ', surname, name, age, 'years old which weight is', weight, 'kg.', '\n Your form is not okay, do sport!')
+elif age >= 40 and (weight < 50 or weight > 120):
+    print ('Dear ', surname, name, age, 'years old which weight is', weight, 'kg.', '\n Your form is not okay! You need to visit a doctor.')
+else:
+    print ('bye')
